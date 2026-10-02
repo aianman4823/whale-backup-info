@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Whale Backup: private, encrypted recovery backups for a whale identification service." />
+    <title>Whale Backup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><a class="brand" href="./">Whale Backup</a><span>Service information</span></header>
+    <main>
+      <p class="eyebrow">Private operations tool</p>
+      <h1>Protect research data.<br />Make recovery possible.</h1>
+      <p class="lead">Whale Backup is being configured to create encrypted recovery backups
+        for a whale identification service and store them in the operator's Google Drive.</p>
+      <p class="notice">Backup scheduling and cloud restoration are being validated.
+        They are enabled only after recovery checks succeed.</p>
+      <section aria-labelledby="purpose">
+        <h2 id="purpose">What the tool does</h2>
+        <p>The planned backup covers application databases, research images, inference history,
+          model and search-index artifacts, and the configuration needed to restore the service.
+          Development and production use separate backup repositories and encryption keys.</p>
+        <p>Backup frequency is configurable. Recovery checks use a separate restore environment
+          so that validation does not overwrite the running service.</p>
+      </section>
+      <section aria-labelledby="drive">
+        <h2 id="drive">Why Google authorization is requested</h2>
+        <p>An authorized operator connects their Google account so the local tool can create,
+          upload, read, and verify its backup files in Google Drive. The requested
+          <code>drive.file</code> scope limits access to files created by or explicitly granted
+          to this app. The tool does not request access to unrelated Drive files.</p>
+        <p>Backup contents are encrypted locally before upload. Google OAuth credentials and
+          the repository encryption password are kept separately from the uploaded backup.</p>
+      </section>
+      <section aria-labelledby="audience">
+        <h2 id="audience">Who it is for</h2>
+        <p>This is a private tool for authorized operators of the whale identification service.
+          This informational website does not provide a sign-in, collect backup files, or
+          expose the application or its private network.</p>
+      </section>
+      <section aria-labelledby="support">
+        <h2 id="support">Support</h2>
+        <p>Contact the service operator using the support address shown on Google's consent
+          screen or your existing service support channel.</p>
+      </section>
+      <nav class="policy-links" aria-label="Policies">
+        <a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a>
+      </nav>
+    </main>
+    <footer>Whale Backup · Updated October 3, 2026</footer>
+  </body>
+</html>

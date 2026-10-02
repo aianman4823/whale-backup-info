@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy · Whale Backup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><a class="brand" href="./">Whale Backup</a><span>Privacy policy</span></header>
+    <main class="document">
+      <p class="eyebrow">Effective October 3, 2026</p>
+      <h1>Privacy policy</h1>
+      <p>This policy describes the Google Drive integration and backup behavior intended for
+        Whale Backup, a private operations tool for a whale identification service. Cloud
+        backup deployment is being validated. This policy must be reviewed before enabling
+        the integration and kept current if its behavior changes.</p>
+      <section><h2>Google data access and purpose</h2>
+        <p>The local tool requests Google's <code>drive.file</code> permission. It accesses
+          the backup folders and files it creates, or files explicitly granted to it, and
+          their metadata. It uses this access to upload encrypted backups, list available
+          backups, check integrity, and download data for restoration. It does not request
+          access to unrelated Drive documents, email, contacts, or calendars.</p>
+      </section>
+      <section><h2>Backup contents and storage</h2>
+        <p>Backups may contain application account details, research images, labels, inference
+          history, audit records, model and index files, and operational configuration,
+          including application secrets required for recovery. These contents are encrypted
+          on the operator's computer before transfer to their Google Drive.</p>
+        <p>The Google OAuth client configuration, refresh token, and backup encryption password
+          are stored in restricted local files, separately from the uploaded backup payload.
+          The operator must also keep a recovery copy of the encryption password in a secure
+          place outside that computer. Local snapshot and restore files can contain decrypted
+          data and must be protected by the operator.</p>
+      </section>
+      <section><h2>Sharing and use limitations</h2>
+        <p>The operator controls access to the Drive account and backup repository. The tool
+          does not automatically share backups with other Drive users, publish their contents,
+          sell Google user data, or use it for advertising or generalized AI or machine-learning
+          training. Google stores and processes the encrypted backup objects as the storage
+          provider under its own terms and privacy policy.</p>
+        <p>Whale Backup's use and transfer of information received from Google APIs will adhere
+          to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+          Services User Data Policy</a>, including its Limited Use requirements.</p>
+      </section>
+      <section><h2>Retention, deletion, and revocation</h2>
+        <p>Automatic deletion is disabled by default. The operator selects an appropriate
+          retention policy and removes backups they no longer need. Revoking Google access
+          stops future authorized transfers; it does not delete backup files already stored
+          in Drive or local copies. To remove stored data, the operator must delete the backup
+          files and local copies, and empty the applicable trash when appropriate.</p>
+        <p>An authorized operator can revoke the app's access through their Google Account
+          connections settings and remove the local credentials. Before deleting recovery
+          data or keys, the operator should verify that a required recovery copy remains.</p>
+      </section>
+      <section><h2>This website</h2>
+        <p>These static information pages do not use analytics scripts, advertising, cookies,
+          sign-in forms, or upload forms. The hosting provider may process ordinary request
+          information to serve the website under its own privacy policy.</p>
+      </section>
+      <section><h2>Contact and changes</h2>
+        <p>For questions, use the support email shown on Google's consent screen or your
+          existing service support channel. Material changes to Google data access or use
+          must be reflected in this policy before the changed behavior is enabled.</p>
+      </section>
+      <nav class="policy-links" aria-label="Policies"><a href="./">Homepage</a><a href="terms.html">Terms of service</a></nav>
+    </main>
+    <footer>Whale Backup · Updated October 3, 2026</footer>
+  </body>
+</html>
